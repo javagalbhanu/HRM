@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+    <line>
+      <![CDATA[FAIL:User Not Present in Table:bhanu]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="20799" started-at="2017-01-19T07:54:50Z" finished-at="2017-01-19T07:55:11Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="20799" started-at="2017-01-19T07:54:50Z" finished-at="2017-01-19T07:55:11Z">
+      <class name="com.hrm.scripts.CreateDeleteUser">
+        <test-method status="PASS" signature="initFrameWork()[pri:0, instance:com.hrm.scripts.CreateDeleteUser@192b07fd]" name="initFrameWork" is-config="true" duration-ms="145" started-at="2017-01-19T13:24:50Z" finished-at="2017-01-19T13:24:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initFrameWork -->
+        <test-method status="PASS" signature="initBrowser(java.lang.String)[pri:0, instance:com.hrm.scripts.CreateDeleteUser@192b07fd]" name="initBrowser" is-config="true" duration-ms="3" started-at="2017-01-19T13:24:50Z" finished-at="2017-01-19T13:24:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method status="PASS" signature="initApplication(java.lang.String)[pri:0, instance:com.hrm.scripts.CreateDeleteUser@192b07fd]" name="initApplication" is-config="true" duration-ms="5357" started-at="2017-01-19T13:24:50Z" finished-at="2017-01-19T13:24:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initApplication -->
+        <test-method status="PASS" signature="preCondition(java.lang.reflect.Method)[pri:0, instance:com.hrm.scripts.CreateDeleteUser@192b07fd]" name="preCondition" is-config="true" duration-ms="1914" started-at="2017-01-19T13:24:55Z" finished-at="2017-01-19T13:24:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.hrm.scripts.CreateDeleteUser.testCreateDeleteUser()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="FAIL" signature="testCreateDeleteUser()[pri:0, instance:com.hrm.scripts.CreateDeleteUser@192b07fd]" name="testCreateDeleteUser" duration-ms="10840" started-at="2017-01-19T13:24:57Z" finished-at="2017-01-19T13:25:08Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.hrm.pages.SystemUsersPage.verifyUserPresentInTable(SystemUsersPage.java:47)
+	at com.hrm.scripts.CreateDeleteUser.testCreateDeleteUser(CreateDeleteUser.java:43)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[FAIL:User Not Present in Table:bhanu]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testCreateDeleteUser -->
+        <test-method status="PASS" signature="postCondition(org.testng.ITestResult)[pri:0, instance:com.hrm.scripts.CreateDeleteUser@192b07fd]" name="postCondition" is-config="true" duration-ms="1246" started-at="2017-01-19T13:25:08Z" finished-at="2017-01-19T13:25:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCreateDeleteUser status=FAILURE method=CreateDeleteUser.testCreateDeleteUser()[pri:0, instance:com.hrm.scripts.CreateDeleteUser@192b07fd] output=FAIL:User Not Present in Table:bhanu]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method status="PASS" signature="cleanApplication()[pri:0, instance:com.hrm.scripts.CreateDeleteUser@192b07fd]" name="cleanApplication" is-config="true" duration-ms="1278" started-at="2017-01-19T13:25:09Z" finished-at="2017-01-19T13:25:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanApplication -->
+        <test-method status="PASS" signature="closeBrowser(java.lang.String)[pri:0, instance:com.hrm.scripts.CreateDeleteUser@192b07fd]" name="closeBrowser" is-config="true" duration-ms="2" started-at="2017-01-19T13:25:11Z" finished-at="2017-01-19T13:25:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="closeFrameWork()[pri:0, instance:com.hrm.scripts.CreateDeleteUser@192b07fd]" name="closeFrameWork" is-config="true" duration-ms="211" started-at="2017-01-19T13:25:11Z" finished-at="2017-01-19T13:25:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeFrameWork -->
+      </class> <!-- com.hrm.scripts.CreateDeleteUser -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

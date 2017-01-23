@@ -1,0 +1,11 @@
+<suite name="OrangeSuite" parallel="none">
+  <test name="FirefoxTest">
+  <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.hrm.scripts.ExplicitLoginScenario"/>
+      <class name="com.hrm.scripts.ImplicitLoginScenario"/>
+      <class name="com.hrm.scripts.VerifyLoginLogout"/>
+      <class name="com.hrm.scripts.VerifyLogo"/>
+    </classes>
+  </test>
+</suite>
